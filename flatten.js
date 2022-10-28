@@ -1,11 +1,8 @@
 const flatten = function(array) {
-  //create a new array to store the flatten version of the array
+
     let flattenArr = [];
   
-    //create a loop to check if the current valueis array
-    //if it is an array - we should go inside another loop and take
-    //the values from there and push them to our new flatten array
-    //return the new array
+
     for (let input of array) {
       if (Array.isArray(input)) {
         for (let i = 0; i < input.length; i++) {
@@ -32,7 +29,7 @@ const flatten = function(array) {
       console.log(`❎ Assertion Failed:`, false);
     }
   };
-  
+
   const assertArraysEqual = function(actual, expected) {
     if (eqArrays (actual, expected)){
       console.log(`✅ Assertion Failed: ${actual} !== ${expected}`);
