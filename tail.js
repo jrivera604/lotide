@@ -1,22 +1,12 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  let tail = actual.slice(1);
-  let tail2 = expected.slice(1);
-
-
-  if (JSON.stringify(tail) === JSON.stringify(tail2)) {
-    console.log(`✅ Assertion Passed: ${tail} === ${tail2}`);
-  } else {
-    console.log(`❎ Assertion Failed: ${tail} !== ${tail2}`);
-  }
-  return;
+const assertEqual = require('./assertEqual');
+const tail = function(arr){
+  let end = arr.slice(1);
+  return end
 };
 
-// TEST CODE
-assertEqual(["Lighthouse Labs", "Bootcamp", 3], ["Bootcamp", "Bootcamp", 3]);
-assertEqual([1, 2, 3, 4], [1, 2, 3, 4]);
-assertEqual([1, 2, 3, 4], [1, 2, 3, 4, 5]);
-assertEqual([1],[1]);
-assertEqual([1,2,3],[1,2]);
-
-
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result.length, 2); // ensure we get back two elements
+assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
+assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+assertEqual(result[1], "Lab");
