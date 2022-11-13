@@ -25,11 +25,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const test = countLetters ("lighthouse labs")
-console.log (test["l"])
-assertEqual(test["l"], 2 )
-assertEqual(test["i"], 1)
-assertEqual(test["x"], 1)
+const test = countLetters("lighthouse labs");
+console.log(test["l"]);
+assertEqual(test["l"], 2);
+assertEqual(test["i"], 1);
+assertEqual(test["x"], 1);
 
 
 

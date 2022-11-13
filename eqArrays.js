@@ -1,9 +1,8 @@
-const assertEqual = require('./assertEqual')
+const assertEqual = require('./assertEqual');
 const eqArrays = function(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✅ Assertion Passed:`, true);
-  }
-  else {
+  } else {
     console.log(`❎ Assertion Failed:`, false);
   }
 };

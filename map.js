@@ -5,24 +5,22 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
 const eqArrays = function(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✅ Assertion Passed:`, true);
-  }
-  else {
+  } else {
     console.log(`❎ Assertion Failed:`, false);
   }
 };
 
 const assertArraysEqual = function(actual, expected) {
-  if (eqArrays (actual, expected)){
+  if (eqArrays(actual, expected)) {
     console.log(`❎Assertion Failed: ${actual} !== ${expected}`);
-  }
-  else {
+  } else {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   }
 };

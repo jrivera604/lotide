@@ -1,4 +1,18 @@
-{ "scripts": {
+{ "name": "@jrivera604/lotide",
+  "version" : "1.0.0",
+  "description" : "A mini clone of the Lodash library. This project was created by myself a part of my learning at Lighthouse Labs.",
+  "main" : "tail.js",
+  "directories": {
+    "test": "test"
+  },
+
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/jrivera604/lotide"
+  },
+  
+  
+  "scripts": {
   "test": "mocha"
 },
   "dependencies": {},

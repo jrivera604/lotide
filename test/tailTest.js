@@ -1,5 +1,5 @@
-const tail = require('../tail')
-const assertEqual = require('../assertEqual')
+const tail = require('../tail');
+const assertEqual = require('../assertEqual');
 const assert = require('chai').assert;
 
 describe("#tail", () => {
@@ -9,9 +9,9 @@ describe("#tail", () => {
     
   });
   it("shows Lighthouse", () => {
-    assert.deepEqual(result[0], "Lighthouse"); 
+    assert.deepEqual(result[0], "Lighthouse");
   });
   it("shows Labs", () => {
-    assert.deepEqual(result[1], "Labs")
+    assert.deepEqual(result[1], "Labs");
   });
 });

@@ -1,8 +1,8 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = require('./assertEqual');
-const tail = function(arr){
+const tail = function(arr) {
   let end = arr.slice(1);
-  return end
+  return end;
 };
 
-module.exports = tail
+module.exports = tail;
