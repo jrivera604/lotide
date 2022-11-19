@@ -1,6 +1,6 @@
 {
   "name": "@jrivera604/lotide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mini clone of the Lodash library. This project was created by myself a part of my learning at Lighthouse Labs.",
   "main": "tail.js",
   "directories": {
